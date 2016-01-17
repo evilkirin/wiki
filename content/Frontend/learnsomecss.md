@@ -55,4 +55,20 @@ date: 2016-01-17 13:11
 # So, questions remain...
 
 - what exactly is block-level elements, how does it differ from other type of display type.
+- this is all about flexbox?
 
+- [CSS Layout - The display Property](http://www.w3schools.com/css/css_display_visibility.asp)
+    + block-level elements
+        * A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+    + inline elements
+        * An inline element does not start on a new line and only takes up as much width as necessary
+- [CSS Layout - Horizontal Align](http://www.w3schools.com/css/css_align.asp)
+    + Center align
+        * `margin: auto`
+    + Left and Right Align
+        * using postion: absolute
+        * using float
+- [CSS Pseudo-classes](http://www.w3schools.com/css/css_pseudo_classes.asp)
+    + A pseudo-class is used to define a special state of an element
+- [CSS Pseudo-elements](http://www.w3schools.com/css/css_pseudo_elements.asp)
+    + A CSS pseudo-element is used to style specified parts of an element
