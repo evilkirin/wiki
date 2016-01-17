@@ -55,14 +55,13 @@ def deploy():
         delete=env.rsync_delete
     )
 
-
 def g():
     local("simiki generate")
-
+    local("ghp-import -p output")
 
 def p():
+    local("simiki generate")
     local("simiki preview")
-
 
 def gp():
     g()
