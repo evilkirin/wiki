@@ -30,7 +30,7 @@ def update_simiki():
     print(blue("Old Version: "))
     run("simiki -V")
     run("pip install -U simiki")
-    print(blue("New Version: ")) 
+    print(blue("New Version: "))
     run("simiki -V")
 
 
