@@ -1,8 +1,11 @@
 # Document:
 # http://simiki.org/docs/configuration.html
 
-url: 
-title: 
-keywords: 
-description: 
-author: 
+url: http://wiki.darkzach.com
+title: Zach's not so private wiki
+keywords: java, frontend
+description: you see the title..
+author: Zach Tse
+default_ext: md
+pygments: true
+theme: yasimple
