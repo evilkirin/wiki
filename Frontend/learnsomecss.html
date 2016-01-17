@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="Stylesheet" type="text/css" href="/static/css/typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/reset_typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+        <title>learnSomeCss - Zach's not so private wiki</title>
+        <meta name="keywords" content="java, frontend"/>
+        <meta name="description" content="you see the title.."/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+<script language="javascript" type="text/javascript">
+    var oddClick = true;
+    $(document).ready(function() {
+      $('#toggle-button').click(function() {
+        $('#container').animate({
+          width: oddClick? "100%":"60%",
+        });
+        $(this).text(oddClick? "窄版":"宽版");
+        oddClick = !oddClick;
+      });
+    });
+</script>
+
+    </head>
+
+    <body>
+        <div id="container" class="typo">
+            
+    <div id="header">
+        <div id="post-nav">
+            <div id="toggle-button">宽版</div>
+            
+            <a href="/">Home</a> » <a href="/#Frontend">Frontend</a> » learnSomeCss
+            
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="content">
+        <blockquote>
+<p>要学前端，CSS是必经之路，就不要怕麻烦了。</p>
+</blockquote>
+<h1 id="learn-css-layout"><a href="http://learnlayout.com/">Learn CSS Layout</a></h1>
+<ul>
+<li>the <code>display</code> property<ul>
+<li>display is CSS's most important property for controlling layout</li>
+<li>block, inline, none, line-block, flex</li>
+</ul>
+</li>
+<li>So, talking about block-level elements:<ul>
+<li>setting the width to 600px is not enough<ul>
+<li>margin: 0 auto</li>
+<li>even better -&gt; max-width: 600px</li>
+</ul>
+</li>
+<li>the weird box model<ul>
+<li>the element's border and padding will stretch out the element beyond the specified width.</li>
+<li>and <code>box-sizing: border-box</code> come to rescue</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>In order to make more complex layouts, we need to discuss the <strong>position</strong> property<ul>
+<li>static<ul>
+<li>default value</li>
+<li>A static element is said to be not positioned and an element with its position set to anything else is said to be positioned</li>
+</ul>
+</li>
+<li>relative<ul>
+<li>behaves the same as static unless you add some extra properties</li>
+<li>A fixed element is positioned relative to the viewport</li>
+</ul>
+</li>
+<li>absolute<ul>
+<li>behaves like fixed except relative to the nearest positioned ancestor instead of relative to the viewport</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>float: left</code><ul>
+<li>intended for wrapping text around images</li>
+<li>clear</li>
+<li>clearfix<ul>
+<li><code>overflow: auto</code></li>
+<li><code>zoom: 1</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>percent width<ul>
+<li>Percent is a measurement unit relative to the containing block</li>
+<li>percent width layout<ul>
+<li>but it couldn't handle it when the window or layout is too narrow</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>media queries<ul>
+<li>@media screen and (min-width:600px)</li>
+</ul>
+</li>
+<li><code>display: inline-block</code><ul>
+<li>inline-block elements are like inline elements but they can have a width and height</li>
+<li>layout<ul>
+<li>affected by <code>vertical-align</code></li>
+<li>needs to set width for all columns</li>
+<li>There will be a gap between the columns if there is any whitespace between them in the HTML</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>column -&gt; let you easily make multi-column text<ul>
+<li>column-count</li>
+<li>column-gap</li>
+</ul>
+</li>
+<li><code>display: flex</code><ul>
+<li><code>flex: 1</code></li>
+<li>align-items</li>
+<li>justify-content</li>
+</ul>
+</li>
+</ul>
+<h1 id="so-questions-remain">So, questions remain...</h1>
+<ul>
+<li>what exactly is block-level elements, how does it differ from other type of display type.</li>
+</ul>
+    </div>
+
+        </div>
+        <div id="footer">
+              <p>
+                Copyright © 2012-2016 Zach Tse.
+                Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.
+                Theme by <a href="https://github.com/tankywoo/yasimple" target="_blank">YASimple</a>.
+              </p>
+                <p>Last Update 2016-01-17 17:29:28</p>
+        </div>
+    </body>
+</html>
