@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="Stylesheet" type="text/css" href="/static/css/typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/reset_typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+        <title>Textexpander & Markdown - Zach's not so private wiki</title>
+        <meta name="keywords" content="java, frontend, backend, css, javascript"/>
+        <meta name="description" content="you see the title.."/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+<script language="javascript" type="text/javascript">
+    var oddClick = true;
+    $(document).ready(function() {
+      $('#toggle-button').click(function() {
+        $('#container').animate({
+          width: oddClick? "100%":"60%",
+        });
+        $(this).text(oddClick? "窄版":"宽版");
+        oddClick = !oddClick;
+      });
+    });
+</script>
+
+    </head>
+
+    <body>
+        <div id="container" class="typo">
+            
+    <div id="header">
+        <div id="post-nav">
+            <div id="toggle-button">宽版</div>
+            
+            <a href="/">Home</a> » <a href="/#tools">tools</a> » Textexpander & Markdown
+            
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="content">
+        <ul>
+<li><a href="http://sspai.com/27479/">利用 TextExpander 提高在 Mac 上撰写 Markdown 的效率 - 少数派</a><ul>
+<li>Link to front browser tab 这个功能是我之前就想到过的，没有想到真的有</li>
+</ul>
+</li>
+<li><a href="http://www.leancrew.com/all-this/2014/07/quicker-markdown-linking-with-textexpander/">Quicker Markdown linking with TextExpander </a><ul>
+<li>我感觉aText或者TextExpander的功能，与Workflow在iOS中的功能挺像的。<ul>
+<li>用某种方式触发动作</li>
+<li>执行一系列动作</li>
+</ul>
+</li>
+<li>可以再想想</li>
+</ul>
+</li>
+<li><a href="https://gist.github.com/vitorgalvao/5392178">Applescript to get frontmost tab’s url and title of various browsers.</a><ul>
+<li>messing around with applescript is funny. it seems they’re experimenting with those browsers rather than referring to a official document.</li>
+</ul>
+</li>
+<li><a href="http://www.makeuseof.com/tag/7-tips-for-automating-your-mac-with-textexpander/">7 Tips For Automating Your Mac With TextExpander</a><ul>
+<li>Special Keys, this is really handy..</li>
+</ul>
+</li>
+</ul>
+<div class="hlcode"><pre><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;System Events&quot;</span>
+  <span class="k">set</span> <span class="nv">numChrome</span> <span class="k">to</span> <span class="nb">count</span> <span class="p">(</span><span class="nb">every</span> <span class="nv">process</span> <span class="nb">whose</span> <span class="na">name</span> <span class="ow">is</span> <span class="s2">&quot;Google Chrome&quot;</span><span class="p">)</span>
+<span class="k">end</span> <span class="k">tell</span>
+
+<span class="k">if</span> <span class="nv">numChrome</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">then</span>
+    <span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;Google Chrome&quot;</span>
+      <span class="k">set</span> <span class="nv">frontIndex</span> <span class="k">to</span> <span class="na">active</span> <span class="no">tab</span> <span class="na">index</span> <span class="k">of</span> <span class="nb">front</span> <span class="na">window</span>
+      <span class="k">set</span> <span class="nv">fURL</span> <span class="k">to</span> <span class="nv">URL</span> <span class="k">of</span> <span class="no">tab</span> <span class="nv">frontIndex</span> <span class="k">of</span> <span class="nb">front</span> <span class="na">window</span>
+      <span class="k">set</span> <span class="nv">fTitle</span> <span class="k">to</span> <span class="na">title</span> <span class="k">of</span> <span class="no">tab</span> <span class="nv">frontIndex</span> <span class="k">of</span> <span class="nb">front</span> <span class="na">window</span>
+    <span class="k">end</span> <span class="k">tell</span>
+<span class="k">end</span> <span class="k">if</span>
+
+<span class="k">get</span> <span class="s2">&quot;[&quot;</span> <span class="o">&amp;</span> <span class="nv">fTitle</span> <span class="o">&amp;</span> <span class="s2">&quot;](&quot;</span> <span class="o">&amp;</span> <span class="nv">fURL</span> <span class="o">&amp;</span> <span class="s2">&quot;)【|】&quot;</span>
+</pre></div>
+    </div>
+
+        </div>
+        <div id="footer">
+              <p>
+                Copyright © 2012-2016 Zach Tse.
+                Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.
+                Theme by <a href="https://github.com/tankywoo/yasimple" target="_blank">YASimple</a>.
+              </p>
+                <p>Last Update 2016-01-18 22:41:45</p>
+        </div>
+    </body>
+</html>
