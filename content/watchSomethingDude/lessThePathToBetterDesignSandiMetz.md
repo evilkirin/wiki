@@ -1,0 +1,103 @@
+---
+title: "Less, The Path to Better Design - By Sandi Metz"
+date: 2016-01-23 20:30
+---
+
+- [Less - The Path to Better Design - By Sandi Metz](https://vimeo.com/26330100)
+
+<iframe src="https://player.vimeo.com/video/26330100" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+- What is Design?
+    - is not the ‘software architect’
+    - the drawings
+    - the original plan
+    - Design is the code, the art of arranging code
+    - Code needs to work today just once, be easy to change forever.
+    - The purpose of design is to reduce the cost of change.
+- How then should you behave?
+    - Prescriptions
+        - Patterns
+            - Patterns work at the correct dosage.
+        - Principles
+            - SOLID, Demeter
+            - Principles are broad but blind.
+    - Descriptions
+        - Loosely Coupled
+        - Highly Cohesive
+        - Easily Composable
+        - Context Independent
+        - Perfect but how?
+    - Diagnostics
+        - Simple ways to judge the goodness of code
+        - Transparent
+            - The consequences of change are visible and predictable
+        - Reasonable
+            - The code of adding a new feature is proportional to its value.
+        - Usable
+            - If you already wrote the code, you can reuse it.
+        - Exemplary
+            - More code like this would be good for your app.
+        - These four diagnostics, they don’t tell you how to write code, as much as they tell you when to stop.
+        - Design is never perfect. Designer are not omniscient.
+        - The design is good enough when the code is **TRUE**.
+        - It’s easy to design. Just do less.
+- Part One: Don’t be Know-It-All
+    - Example 1:
+        - Trip tells Mechanic **how** to behave.
+    - Example 2:
+        - Trip tells Mechanic **what** to do.
+    - Dependencies
+        - **Managing dependencies is at the center of design**
+        - You cannot avoid them
+        - choose them
+        - lest they choose you
+        - Rule
+            - **Depend on things that are stable than you**.
+    - Embrace uncertainty
+        - It contains design specification
+        - You cannot predict the future
+            - Guard against it.
+            - Write code that can tolerate change
+        - Uncertain?
+            - Aggressively decouple
+            - It’s not a license to guess, it’s a directive to decouple. 
+    - Example 3:
+        - Trip tells Mechanic **what Trip Wants**
+    - Summary
+        - Don’t guess what changes will come. Just guess what will change
+        - Knowledge creates dependencies
+        - Unstable dependencies increase risk
+        - Uncertainty is your guide
+        - Loosen Coupling
+        - Lower cost
+        - This is Design
+- Part Two: It’s Ducks All the Way Down
+    - Example 4:
+        - Trip tells Mechanic **what** to do.
+    - Concretions are Complex. Abstractions are Simple
+    - Example 6
+        - Trip tells **Preparer what Trip Wants**
+        - Preparer is an agreement about the public interface of an idea.
+        - Preparer is an duck type.
+        - Abstractions are more stable than concretions. 
+        - Abstractions may safely be depended upon.
+        - You can trade the unpredictability of what others do, for the constancy of what you want.
+    - Expectation - Trust - Trustworthy objects.
+    - Summary
+        - Follow the message
+        - Don’t be stuck on the Class
+        - Create the Duck
+        - Embrace the Duck
+        - This is Design
+- Summarize the first two parts:
+    - The thing that reduce the risk, in the face of uncertainty, was the stable abstraction.
+    - Objects know more about themselves and less about others. That’s about coupling.
+    - These two ideas are simply two techniques of many million.
+    - If we can find the abstraction, we can use it to guide our behavior in the future.
+- Part Three: Space Between Objects
+    - “It’s hard to describe what we do. And we’re trying to talk about these things. Putting words on a concept is necessary, because we have to try to communicate. But doing so removes this from what’s going on. Programming is an Art, and good designers are artists. They know these techniques, but techniques are not what let’s them create. They have a feel for what’s right. And its this feeling that guides them. But everything is easier if you acquire a feeling for design. If you have it, you will hate what feels bad, and you will fuss with that feeling until it goes away. And it’s in these fussing where you learn these techniques.”
+    - If I can give a feeling about design, it would not about what goes in every object, it would be about **space between objects**.
+- What is Design?
+    - Design is the thing that let you put off design decisions until later
+    - It reduces risk and lower cost
+    - It let you do less.
