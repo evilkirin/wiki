@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="Stylesheet" type="text/css" href="/static/css/typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/reset_typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+        <title>Less, The Path to Better Design - By Sandi Metz - Zach's not so private wiki</title>
+        <meta name="keywords" content="java, frontend, backend, css, javascript"/>
+        <meta name="description" content="you see the title.."/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+<script language="javascript" type="text/javascript">
+    var oddClick = true;
+    $(document).ready(function() {
+      $('#toggle-button').click(function() {
+        $('#container').animate({
+          width: oddClick? "100%":"60%",
+        });
+        $(this).text(oddClick? "窄版":"宽版");
+        oddClick = !oddClick;
+      });
+    });
+</script>
+
+    </head>
+
+    <body>
+        <div id="container" class="typo">
+            
+    <div id="header">
+        <div id="post-nav">
+            <div id="toggle-button">宽版</div>
+            
+            <a href="/">Home</a> » <a href="/#watchSomethingDude">watchSomethingDude</a> » Less, The Path to Better Design - By Sandi Metz
+            
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="content">
+        <ul>
+<li><a href="https://vimeo.com/26330100">Less - The Path to Better Design - By Sandi Metz</a></li>
+</ul>
+<iframe src="https://player.vimeo.com/video/26330100" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<ul>
+<li>What is Design?<ul>
+<li>is not the ‘software architect’</li>
+<li>the drawings</li>
+<li>the original plan</li>
+<li>Design is the code, the art of arranging code</li>
+<li>Code needs to work today just once, be easy to change forever.</li>
+<li>The purpose of design is to reduce the cost of change.</li>
+</ul>
+</li>
+<li>How then should you behave?<ul>
+<li>Prescriptions<ul>
+<li>Patterns<ul>
+<li>Patterns work at the correct dosage.</li>
+</ul>
+</li>
+<li>Principles<ul>
+<li>SOLID, Demeter</li>
+<li>Principles are broad but blind.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Descriptions<ul>
+<li>Loosely Coupled</li>
+<li>Highly Cohesive</li>
+<li>Easily Composable</li>
+<li>Context Independent</li>
+<li>Perfect but how?</li>
+</ul>
+</li>
+<li>Diagnostics<ul>
+<li>Simple ways to judge the goodness of code</li>
+<li>Transparent<ul>
+<li>The consequences of change are visible and predictable</li>
+</ul>
+</li>
+<li>Reasonable<ul>
+<li>The code of adding a new feature is proportional to its value.</li>
+</ul>
+</li>
+<li>Usable<ul>
+<li>If you already wrote the code, you can reuse it.</li>
+</ul>
+</li>
+<li>Exemplary<ul>
+<li>More code like this would be good for your app.</li>
+</ul>
+</li>
+<li>These four diagnostics, they don’t tell you how to write code, as much as they tell you when to stop.</li>
+<li>Design is never perfect. Designer are not omniscient.</li>
+<li>The design is good enough when the code is <strong>TRUE</strong>.</li>
+<li>It’s easy to design. Just do less.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Part One: Don’t be Know-It-All<ul>
+<li>Example 1:<ul>
+<li>Trip tells Mechanic <strong>how</strong> to behave.</li>
+</ul>
+</li>
+<li>Example 2:<ul>
+<li>Trip tells Mechanic <strong>what</strong> to do.</li>
+</ul>
+</li>
+<li>Dependencies<ul>
+<li><strong>Managing dependencies is at the center of design</strong></li>
+<li>You cannot avoid them</li>
+<li>choose them</li>
+<li>lest they choose you</li>
+<li>Rule<ul>
+<li><strong>Depend on things that are stable than you</strong>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Embrace uncertainty<ul>
+<li>It contains design specification</li>
+<li>You cannot predict the future<ul>
+<li>Guard against it.</li>
+<li>Write code that can tolerate change</li>
+</ul>
+</li>
+<li>Uncertain?<ul>
+<li>Aggressively decouple</li>
+<li>It’s not a license to guess, it’s a directive to decouple. </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Example 3:<ul>
+<li>Trip tells Mechanic <strong>what Trip Wants</strong></li>
+</ul>
+</li>
+<li>Summary<ul>
+<li>Don’t guess what changes will come. Just guess what will change</li>
+<li>Knowledge creates dependencies</li>
+<li>Unstable dependencies increase risk</li>
+<li>Uncertainty is your guide</li>
+<li>Loosen Coupling</li>
+<li>Lower cost</li>
+<li>This is Design</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Part Two: It’s Ducks All the Way Down<ul>
+<li>Example 4:<ul>
+<li>Trip tells Mechanic <strong>what</strong> to do.</li>
+</ul>
+</li>
+<li>Concretions are Complex. Abstractions are Simple</li>
+<li>Example 6<ul>
+<li>Trip tells <strong>Preparer what Trip Wants</strong></li>
+<li>Preparer is an agreement about the public interface of an idea.</li>
+<li>Preparer is an duck type.</li>
+<li>Abstractions are more stable than concretions. </li>
+<li>Abstractions may safely be depended upon.</li>
+<li>You can trade the unpredictability of what others do, for the constancy of what you want.</li>
+</ul>
+</li>
+<li>Expectation - Trust - Trustworthy objects.</li>
+<li>Summary<ul>
+<li>Follow the message</li>
+<li>Don’t be stuck on the Class</li>
+<li>Create the Duck</li>
+<li>Embrace the Duck</li>
+<li>This is Design</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Summarize the first two parts:<ul>
+<li>The thing that reduce the risk, in the face of uncertainty, was the stable abstraction.</li>
+<li>Objects know more about themselves and less about others. That’s about coupling.</li>
+<li>These two ideas are simply two techniques of many million.</li>
+<li>If we can find the abstraction, we can use it to guide our behavior in the future.</li>
+</ul>
+</li>
+<li>Part Three: Space Between Objects<ul>
+<li>“It’s hard to describe what we do. And we’re trying to talk about these things. Putting words on a concept is necessary, because we have to try to communicate. But doing so removes this from what’s going on. Programming is an Art, and good designers are artists. They know these techniques, but techniques are not what let’s them create. They have a feel for what’s right. And its this feeling that guides them. But everything is easier if you acquire a feeling for design. If you have it, you will hate what feels bad, and you will fuss with that feeling until it goes away. And it’s in these fussing where you learn these techniques.”</li>
+<li>If I can give a feeling about design, it would not about what goes in every object, it would be about <strong>space between objects</strong>.</li>
+</ul>
+</li>
+<li>What is Design?<ul>
+<li>Design is the thing that let you put off design decisions until later</li>
+<li>It reduces risk and lower cost</li>
+<li>It let you do less.</li>
+</ul>
+</li>
+</ul>
+    </div>
+
+        </div>
+        <div id="footer">
+              <p>
+                Copyright © 2012-2016 Zach Tse.
+                Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.
+                Theme by <a href="https://github.com/tankywoo/yasimple" target="_blank">YASimple</a>.
+              </p>
+                <p>Last Update 2016-01-24 21:30:36</p>
+        </div>
+    </body>
+</html>
