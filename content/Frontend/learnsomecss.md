@@ -29,10 +29,11 @@ date: 2016-01-17 13:11
 - `float: left`
     + intended for wrapping text around images
     + clear
-    + clearfix
+    + **clearfix**
         * `overflow: auto`
         * `zoom: 1`
 - percent width
+    + yes, just width
     + Percent is a measurement unit relative to the containing block
     + percent width layout
         * but it couldn't handle it when the window or layout is too narrow
