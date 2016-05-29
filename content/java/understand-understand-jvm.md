@@ -57,11 +57,14 @@ date: 2016-03-27 12:11
 因为这两种算法都是依赖于对象的引用来做判断，作者在这里也讨论了一下JDK1.2中对引用概念的扩充：强引用、软引用、弱引用和虚引用。最后，以方法区中废弃常量和无用的类的回收结束了这个小节。
 
 问题：
-有了标记算法，各个内存区域究竟是如何进行扫描的？
+1. 有了标记算法，各个内存区域究竟是如何进行扫描的？其实只有堆和方法区才会进行回收。
+2. GC Roots都有哪些？
 
 #### 垃圾回收算法 How
 
 接下来讲的是几种垃圾回收算法，它们都是以前一个小节中讲的可达性分析作为基础，先标记垃圾对象，然后执行不同的操作来扩大可用的内存区域。包括了：清除、复制、整理几种方法。分代是针对对象存活周期的不同将内存划分为几块，不同的区域使用不同的算法。
+
+[Tuning the Java Heap (Sun Java System Application Server Enterprise Edition 8.2 Performance Tuning Guide)](https://docs.oracle.com/cd/E19900-01/819-4742/6n6sfgml5/index.html)里边提到，new和tenure的default ratio是1:2。
 
 问题：
 1. 为什么新生代用复制而老年代用整理算法？
@@ -82,8 +85,9 @@ Serial可搭配SerialOld和CMS使用，ParNew可搭配SerialOld和CMS使用，Pa
 问题：
 1. CMS有哪些缺点？
 2. CMS与SerialOld有什么样的联系？-XX:CMSInitiatingOccupancyFraction是个什么参数？
-2. 如果新生代的对象被老年代的对象引用怎么办？
-3. G1名称的由来
+3. CMS和PS收集器分别的侧重点是什么？
+4. 如果新生代的对象被老年代的对象引用怎么办？
+5. G1名称的由来
 
 #### 内存分配与回收策略
 
@@ -99,5 +103,23 @@ Serial可搭配SerialOld和CMS使用，ParNew可搭配SerialOld和CMS使用，Pa
 问题：
 1. 内存分配的基本策略是怎么样的？
 2. HandlePromotionFailure这个参数的意义是什么，在JDK6Update24之后这个参数的功能有什么变化？
+3. yong gc vs. major gc vs. full gc
+
+#### Bonus
+
+- [Java Garbage Collection handbook by @JavaPlumbr](https://plumbr.eu/java-garbage-collection-handbook)中对各个GC的实现进行了更详细的讲解，比对着GC Log来说明具体执行了哪些操作，日志的组成部分和含义。
+- [JVM调优总结 -Xms -Xmx -Xmn -Xss - unixboy - ITeye技术网站](http://unixboy.iteye.com/blog/174173)，总结了所有常用的GC参数，也有比较简单的调优建议
+- [Useful JVM Flags - Part 7 (CMS Collector) - codecentric Blog : codecentric Blog](https://blog.codecentric.de/en/2013/10/useful-jvm-flags-part-7-cms-collector/)给出了更为详尽的CMS控制参数
+
+## 第4章 虚拟机性能监控与故障处理工具
+
+这一章主要在介绍各种工具，都是非常有用的，多用几次就熟练了。
+
+- jps
+- jstat, JVM statistics monitoring tool
+- jinfo, configuration info for Java
+- jmap, memory ap for java
+- jhat, JVM heap dump browser
+- jstack
 
 
