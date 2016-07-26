@@ -5,7 +5,7 @@
         <link rel="Stylesheet" type="text/css" href="/static/css/reset_typo.css">
         <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
         <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
-        <title>Try to understand 'Java Concurrency in Practise' - Zach's not so private wiki</title>
+        <title>SOLID, Object-Oriented Design - By Sandi Metz - Zach's not so private wiki</title>
         <meta name="keywords" content="java, frontend, backend, css, javascript"/>
         <meta name="description" content="you see the title.."/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -33,17 +33,34 @@
         <div id="post-nav">
             <div id="toggle-button">宽版</div>
             
-            <a href="/">Home</a> » <a href="/#java">java</a> » Try to understand 'Java Concurrency in Practise'
+            <a href="/">Home</a> » <a href="/#watch-something-dude">watch-something-dude</a> » SOLID, Object-Oriented Design - By Sandi Metz
             
         </div>
     </div>
     <div class="clearfix"></div>
     <div id="content">
-        <h1 id="_1">起因</h1>
-<p>重新回来尝试去理解这本书，也是因为工作写并发代码时中碰到了问题。之前一些很抽象，并不太能够抓得住的东西感觉像是突然被具象化出来，并且就这么砸在你脚上，你还完全不理解这块儿“石头”从何而来。</p>
-<p>这种像是吃翔的感觉真心是美妙无比！</p>
-<h1 id="_2">正文</h1>
-<p>暂时还没写。。。</p>
+        <ul>
+<li><a href="https://vimeo.com/12350535">2009 - Sandi Metz - SOLID Object-Oriented Design on Vimeo</a></li>
+</ul>
+<iframe src="https://player.vimeo.com/video/12350535" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<blockquote>
+<p>Your application will change.
+How’s that gonna work out for you.
+presentation: http://skmetz.home.mindspring.com/img1.html</p>
+</blockquote>
+<ul>
+<li>If testing seems hard - examine your design</li>
+<li>TDD will punish you if you don’t understand design</li>
+</ul>
+<p>Questions to ask when trying to refactor:</p>
+<ul>
+<li>Is it DRY?</li>
+<li>Does it have one responsibility?</li>
+<li>Does everything in it change at the same rate?</li>
+<li>Does it depend on things that change less often than itself?</li>
+</ul>
+<p>What am I trying to do when refactoring? Keep an eye on it. It seems I just try to find some appropriate patterns to apply. May be some TDD will be better.</p>
     </div>
 
         </div>
