@@ -171,3 +171,9 @@ Preferred in Java 8.
 其实看下来，并没有什么特别的技巧，具体的实现基本就是标准答案。能用Commons就别再去费事儿写一遍了，除非你想练习练习基础。
 
 不过，如果是正式项目，还是用HttpClient更稳妥一些。HttpClient还很方便地提供其他的一些功能，比如超时设置，302的支持，cookie的支持等。只要是请求涉及到http相关的一些额外处理，上边的方式都无法胜任了。
+
+### Refs
+
+- [How to download and save a file from Internet using Java? - Stack Overflow](http://stackoverflow.com/questions/921262/how-to-download-and-save-a-file-from-internet-using-java#comment729329_921400)
+- [http - Read url to string in few lines of java code - Stack Overflow](http://stackoverflow.com/questions/4328711/read-url-to-string-in-few-lines-of-java-code)
+- [How to read a text file directly from Internet using Java? - Stack Overflow](http://stackoverflow.com/questions/6259339/how-to-read-a-text-file-directly-from-internet-using-java)
