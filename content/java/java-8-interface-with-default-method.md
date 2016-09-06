@@ -63,3 +63,5 @@ Abstract Class可以有构造函数，可以有状态。关键是它主要用来
 - [language design - Why is "final" not allowed in Java 8 interface methods? - Stack Overflow](http://stackoverflow.com/questions/23453287/why-is-final-not-allowed-in-java-8-interface-methods/23476994#23476994)
 - [Default Methods (The Java™ Tutorials > Learning the Java Language > Interfaces and Inheritance)](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html)
     + 官方教程，自己感觉写的相当不错
+- [Everything You Need To Know About Default Methods](http://blog.codefx.org/java/everything-about-default-methods/#Default-Methods-vs-Abstract-Classes)
+    + 更为系统的一篇文章，有空回头来看看
