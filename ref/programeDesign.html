@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="Stylesheet" type="text/css" href="/static/css/typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/reset_typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+        <title>软件设计 - Zach's not so private wiki</title>
+        <meta name="keywords" content="java, frontend, backend, css, javascript"/>
+        <meta name="description" content="you see the title.."/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+<script language="javascript" type="text/javascript">
+    var oddClick = true;
+    $(document).ready(function() {
+      $('#toggle-button').click(function() {
+        $('#container').animate({
+          width: oddClick? "100%":"60%",
+        });
+        $(this).text(oddClick? "窄版":"宽版");
+        oddClick = !oddClick;
+      });
+    });
+</script>
+
+    </head>
+
+    <body>
+        <div id="container" class="typo">
+            
+    <div id="header">
+        <div id="post-nav">
+            <div id="toggle-button">宽版</div>
+            
+            <a href="/">Home</a> » <a href="/#ref">ref</a> » 软件设计
+            
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="content">
+        <p>一切都是关乎如何把代码写得更好。怎么算好？每个人心中都有一把尺子。恩，首先你得有把尺子吧。</p>
+<h1 id="_1">编程范式</h1>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Programming_paradigm">Programming paradigm - Wikipedia, the free encyclopedia</a></li>
+<li><a href="https://book.douban.com/subject/4031906/">冒号课堂 (豆瓣)</a><ul>
+<li><a href="https://book.douban.com/review/4876348/">从 Kuhn 到科学哲学再到SOLID（冒号课堂）书评</a></li>
+<li>"编程范式就是编程世界的世界观和方法学."</li>
+</ul>
+</li>
+</ul>
+<h1 id="_2">软件设计</h1>
+<ul>
+<li><a href="https://www.goodreads.com/book/show/4101.Interface_Oriented_Design">Goodreads | Interface Oriented Design by Kenneth Pugh</a></li>
+</ul>
+<h2 id="_3">设计原则</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Category:Programming_principles">Category:Programming principles - Wikipedia, the free encyclopedia</a></li>
+<li><a href="http://webpro.github.io/programming-principles/#separation-of-concerns">Programming Principles</a></li>
+<li><a href="http://www.codeproject.com/Articles/93369/How-I-explained-OOD-to-my-wife">How I explained OOD to my wife - CodeProject</a><ul>
+<li>从OOD是什么、为什么要OOD，讲到SOLID</li>
+</ul>
+</li>
+</ul>
+<h2 id="_4">设计模式</h2>
+<ul>
+<li><a href="https://sourcemaking.com/design_patterns">Design Patterns</a><ul>
+<li>关于设计模式最喜欢逛的地方</li>
+</ul>
+</li>
+<li><a href="https://github.com/iluwatar/java-design-patterns/blob/master/command/README.md">java-design-patterns/README.md at master · iluwatar/java-design-patterns</a></li>
+<li><a href="http://www.hollischuang.com/archives/1368">设计模式（一）——设计模式概述-HollisChuang's Blog</a></li>
+</ul>
+    </div>
+
+        </div>
+        <div id="footer">
+              <p>
+                Copyright © 2012-2016 Zach Tse.
+                Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.
+                Theme by <a href="https://github.com/tankywoo/yasimple" target="_blank">YASimple</a>.
+              </p>
+                <p>Last Update 2016-09-11 18:40:40</p>
+        </div>
+    </body>
+</html>
