@@ -65,3 +65,7 @@ Abstract Class可以有构造函数，可以有状态。关键是它主要用来
     + 官方教程，自己感觉写的相当不错
 - [Everything You Need To Know About Default Methods](http://blog.codefx.org/java/everything-about-default-methods/#Default-Methods-vs-Abstract-Classes)
     + 更为系统的一篇文章，有空回头来看看
+- [代理模式详解](http://blog.csdn.net/u013815218/article/details/52562536)
+    + 关于Java中的代理模式应用与实现，这篇文章讲的还比较全面，关键代码也都拉出来看了。倒是对这种设计模式本身讲的不算多
+- [Proxy Design Pattern](https://sourcemaking.com/design_patterns/proxy)
+    + 控制或保护、占位符、远程调用
