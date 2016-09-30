@@ -4,7 +4,9 @@ layout: page
 date: 2016-09-11 17:55
 ---
 
-一切都是关乎如何把代码写得更好。怎么算好？每个人心中都有一把尺子。恩，首先你得有把尺子吧。
+一切都是关乎如何把代码写得更好。怎么算好？每个人心中都有一把尺子。恩，首先你得有把尺子吧：[My proposed design is usually worse than my colleague's - how do I get better?](http://programmers.stackexchange.com/questions/170003/my-proposed-design-is-usually-worse-than-my-colleagues-how-do-i-get-better)
+
+
 
 # 编程范式
 
@@ -23,6 +25,7 @@ date: 2016-09-11 17:55
 - [Programming Principles](http://webpro.github.io/programming-principles/#separation-of-concerns)
 - [How I explained OOD to my wife - CodeProject](http://www.codeproject.com/Articles/93369/How-I-explained-OOD-to-my-wife)
     + 从OOD是什么、为什么要OOD，讲到SOLID
+    + [How I explained Design Patterns to my wife: Part 1 - CodeProject](http://www.codeproject.com/Articles/98598/How-I-explained-Design-Patterns-to-my-wife-Part)
 
 ## 设计模式
 

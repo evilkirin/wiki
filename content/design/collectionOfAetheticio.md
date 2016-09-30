@@ -43,7 +43,6 @@ date: 2016-01-17 19:40
     - How can I make this more transparent?
     - What is the return on effort?
     - Am I solving the right problem?
-    - Am I solving the right problem?
         - Speak up! You are more than a code typist, you are a problem solver.
     - Does anybody care?
         - If what you are building doesn’t make somebodies life better, gives them more time, saves them money, why are you doing it?
@@ -93,7 +92,7 @@ date: 2016-01-17 19:40
     - Conclusion
         - In the end it boils down to this: as a programmer your goal is to construct **the simplest possible semantic model** that would solve your problem. Translate that semantic model as closely as possible into a **syntactic model (code)** and provide **as many clues as possible** so that whomever looks at your code after you can re-create the same semantic model you originally had in mind.
         - Imagine you are leaving breadcrumbs behind you as you walk through the brightly lit forest of your code. Trust me, when you need to find your way back later on, that forest is going to seem dark and misty and foreboding.
-- [Become a better programmer](http://aestheticio.com/become-better-programmer-learning-understand-code/)
+- [Become a better programmer](http://aestheticio.com/become-better-programmer-learning-understand-code/) *
     - To understand code you have to build a **mental model**
     - Your mental model is built up of matches between **general** and **specific knowledge**.
         - Your mental model consists of the set of links between the general and specific knowledge you have that is relevant to this problem.
