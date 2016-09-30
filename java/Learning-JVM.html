@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="Stylesheet" type="text/css" href="/static/css/typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/reset_typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+        <title>Learning JVM - Zach's not so private wiki</title>
+        <meta name="keywords" content="java, frontend, backend, css, javascript"/>
+        <meta name="description" content="you see the title.."/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+<script language="javascript" type="text/javascript">
+    var oddClick = true;
+    $(document).ready(function() {
+      $('#toggle-button').click(function() {
+        $('#container').animate({
+          width: oddClick? "100%":"60%",
+        });
+        $(this).text(oddClick? "窄版":"宽版");
+        oddClick = !oddClick;
+      });
+    });
+</script>
+
+    </head>
+
+    <body>
+        <div id="container" class="typo">
+            
+    <div id="header">
+        <div id="post-nav">
+            <div id="toggle-button">宽版</div>
+            
+            <a href="/">Home</a> » <a href="/#java">java</a> » Learning JVM
+            
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="content">
+        <p>从大二开始学Java，在啃"Thinking in Java"的时候，第一次知道了有JVM这个东西。因为大脑中没有类似的东西，真正的自己也还徘徊在编程世界之外，可以说JVM从来都只是个挂在大脑边缘的概念。也只是在拿起一本本Java相关书籍时，会感觉到其中的内容似曾相识。即使是现在，JVM这个房间也没有装下多少东西，零零散散，东倒西歪。走进这个房间，没有特别的感觉，也不会想着留下来多呆一会儿。比较庆幸的是，最近几次离开时，还是顺手重新摆放布置了一下，慢慢开始有些雏形了。</p>
+<p>这不是第一个房间，但是是我第一个有意识希望把它整理好的房间。</p>
+<h1 id="books">Books</h1>
+<p>在学JVM方面，国内最好的书毫无疑问当属<a href="https://book.douban.com/subject/24722612/">深入理解Java虚拟机（第2版）</a>，不过国外也有一本超级牛的书<a href="https://www.goodreads.com/book/show/2058330.Inside_the_Java_Virtual_Machine_With_CDROM_">Inside the Java Virtual Machine by Bill Venners</a>。读过第二本的一些章节，醍醐灌顶自是不用说，好多细节让你觉得如果早知道就好了，当然有一些也让我很能大喊原来真的是这样！</p>
+<p>初次之外当然是The Java Virtual Machine Specification了。</p>
+<h1 id="github">Github</h1>
+<p>有人说，<a href="http://mp.weixin.qq.com/s?__biz=MzAxOTc0NzExNg==&amp;mid=415513252&amp;idx=1&amp;sn=1c1211e23c507c34f9befbf5282a85c8&amp;scene=21#wechat_redirect">看完"深入理解Java虚拟机"的目标就是写个简单的Java 反编译器</a>，但是我觉得如果能写个可执行字节码的JVM出来不是更NB！当然，自己暂时没这能耐，不过已经有人搞出来了啊。</p>
+<ul>
+<li><a href="http://stackoverflow.com/questions/3887130/java-implementation-of-a-jvm">Java implementation of a... JVM? - Stack Overflow</a></li>
+<li><a href="https://github.com/YaroslavGaponov/node-jvm">YaroslavGaponov/node-jvm: java virtual machine in pure node.js</a></li>
+<li><a href="http://www.jikesrvm.org/">Jikes RVM Home</a></li>
+<li><a href="https://github.com/raydac/j-j-jvm">raydac/j-j-jvm: Yet another JVM interpreter written in Java</a></li>
+</ul>
+    </div>
+
+        </div>
+        <div id="footer">
+              <p>
+                Copyright © 2012-2016 Zach Tse.
+                Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.
+                Theme by <a href="https://github.com/tankywoo/yasimple" target="_blank">YASimple</a>.
+              </p>
+                <p>Last Update 2016-09-30 10:50:48</p>
+        </div>
+    </body>
+</html>

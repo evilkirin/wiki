@@ -5,7 +5,7 @@
         <link rel="Stylesheet" type="text/css" href="/static/css/reset_typo.css">
         <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
         <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
-        <title>SOLID, Object-Oriented Design - By Sandi Metz - Zach's not so private wiki</title>
+        <title>BTrace Related - Zach's not so private wiki</title>
         <meta name="keywords" content="java, frontend, backend, css, javascript"/>
         <meta name="description" content="you see the title.."/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -33,34 +33,35 @@
         <div id="post-nav">
             <div id="toggle-button">宽版</div>
             
-            <a href="/">Home</a> » <a href="/#watch-something-dude">watch-something-dude</a> » SOLID, Object-Oriented Design - By Sandi Metz
+            <a href="/">Home</a> » <a href="/#java">java</a> » BTrace Related
             
         </div>
     </div>
     <div class="clearfix"></div>
     <div id="content">
-        <ul>
-<li><a href="https://vimeo.com/12350535">2009 - Sandi Metz - SOLID Object-Oriented Design on Vimeo</a></li>
-</ul>
-<iframe src="https://player.vimeo.com/video/12350535" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-<blockquote>
-<p>Your application will change.
-How’s that gonna work out for you.
-presentation: http://skmetz.home.mindspring.com/img1.html</p>
-</blockquote>
+        <p>从上层概念，到底层实践。</p>
+<h1 id="_1">动态追踪</h1>
 <ul>
-<li>If testing seems hard - examine your design</li>
-<li>TDD will punish you if you don’t understand design</li>
+<li><a href="http://openresty.org/posts/dynamic-tracing/">动态追踪技术漫谈 –</a><ul>
+<li>"把整个生产系统本身看成是一个可以直接查询的“数据库”，我们直接从这个“数据库”里安全快捷地得到我们想要的信息，而且绝不留痕迹，绝不去采集我们不需要的信息。"</li>
 </ul>
-<p>Questions to ask when trying to refactor:</p>
+</li>
+</ul>
+<h1 id="_2">实践</h1>
 <ul>
-<li>Is it DRY?</li>
-<li>Does it have one responsibility?</li>
-<li>Does everything in it change at the same rate?</li>
-<li>Does it depend on things that change less often than itself?</li>
+<li><a href="http://calvin1978.blogcn.com/articles/btrace1.html">Btrace入门到熟练小工完全指南 | 江南白衣</a><ul>
+<li>"BTrace是神器，每一个需要每天解决线上问题，但完全不用BTrace的Java工程师，都是可疑的"</li>
 </ul>
-<p>What am I trying to do when refactoring? Keep an eye on it. It seems I just try to find some appropriate patterns to apply. May be some TDD will be better.</p>
+</li>
+</ul>
+<h1 id="_3">解析</h1>
+<ul>
+<li><a href="http://ivanzhangwb.github.io/btrace-vm-attach-api/">BTrace原理之 -- VM Attach API</a></li>
+<li><a href="http://www.rowkey.me/blog/2016/09/20/btrace/">BTrace原理浅析 - 后端技术杂谈 | 飒然Hang</a><ul>
+<li>Client(Java compile api + attach api) + Agent（脚本解析引擎 + ASM + JDK6 Instumentation） + Socket</li>
+</ul>
+</li>
+</ul>
     </div>
 
         </div>
