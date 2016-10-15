@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="Stylesheet" type="text/css" href="/static/css/typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/reset_typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+        <title>Code Review, Matters and Manners - Trisha & Maria  - Zach's not so private wiki</title>
+        <meta name="keywords" content="java, frontend, backend, css, javascript"/>
+        <meta name="description" content="you see the title.."/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+<script language="javascript" type="text/javascript">
+    var oddClick = true;
+    $(document).ready(function() {
+      $('#toggle-button').click(function() {
+        $('#container').animate({
+          width: oddClick? "100%":"60%",
+        });
+        $(this).text(oddClick? "窄版":"宽版");
+        oddClick = !oddClick;
+      });
+    });
+</script>
+
+    </head>
+
+    <body>
+        <div id="container" class="typo">
+            
+    <div id="header">
+        <div id="post-nav">
+            <div id="toggle-button">宽版</div>
+            
+            <a href="/">Home</a> » <a href="/#watch-something-dude">watch-something-dude</a> » Code Review, Matters and Manners - Trisha & Maria 
+            
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="content">
+        <ul>
+<li><a href="https://vimeo.com/182087729">Code Review Matters and Manners: Maria Khalusova, Trisha Gee on Vimeo</a></li>
+</ul>
+<iframe src="https://player.vimeo.com/video/182087729" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p>从一年之前就在做code review的事情，今年换老板之后倒也还在坚持。但是因为现在主要是一个人干一块儿新的业务，自己的代码主要是自己和新老板看，周围的人也没怎么在做review的事情，缺少了一点氛围。</p>
+<p>后来，在review新业务代码的时候，有一部分没有review到，结果这部分就出问题了。虽然是一个小问题，但是心里也不太是滋味。好在业务处在拓展期，后果也只是出现了一部分脏数据（当时设计的库忘了加Unique约束，结果那个时候也跑出来捣乱）。加上第一次在自己主导的项目中将一部分代码交给团队里边其他同学来完成，效果也不是特别理想（后来觉得还不如自己加个班写一下），那段时间真的有点懵。</p>
+<p>此Java Zone的主题由两个人合作完成，第一部分有点意思，主要讲我们究竟应该review什么，第二部分把一个一般不会太重视，但是实际上会引起major problem的点拿出来做了讨论。</p>
+<p>下面是第一个话题的几个点：</p>
+<ul>
+<li>Code Review is Too Late For Design<ul>
+<li>Do it in advance, or as you go</li>
+</ul>
+</li>
+<li>Understand what's important<ul>
+<li>Decide on priorities, apply consistently</li>
+<li>Usability<ul>
+<li>Readability</li>
+<li>Maintainability</li>
+<li>Extensability</li>
+</ul>
+</li>
+<li>Functionality<ul>
+<li>Do it do what it supposed to?</li>
+<li>Does it meet "non-functional" requirements?<ul>
+<li>performance</li>
+<li>security</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Dont sweat the little things<ul>
+<li>Automate these checks</li>
+</ul>
+</li>
+</ul>
+<p>虽说确实不应该在review阶段再去讨论设计的合理性，但是Trisha列出来的几个设计要考虑的点倒是有借鉴意义。</p>
+<ul>
+<li>line level<ul>
+<li>Is the <strong>code</strong> in the <strong>right place</strong>?</li>
+<li>Are the <strong>data structures</strong> that have been used appropriate?</li>
+<li>Have opportunities for <strong>code-reuse</strong> been taken?</li>
+<li>Is the code <strong>overly-complex</strong> or <strong>over-engineered</strong>?</li>
+<li>Have <strong>new dependencies</strong> been introduced?</li>
+<li>Is the code making <strong>use of exsiting libraries</strong>?</li>
+<li>Is it <strong>utilising new idioms</strong> from language updates?</li>
+</ul>
+</li>
+<li>bigger things<ul>
+<li>Does the new code <strong>fit with</strong> the overall <strong>architecture</strong>?</li>
+<li>Does the new code follow the current <strong>design practices</strong>?</li>
+<li>Which <strong>design patterns</strong> are used in new code? Are these appropriate?</li>
+<li>Does the code follow <strong>SOLID principles</strong>, <strong>Domain Driven Design</strong>, etc.</li>
+</ul>
+</li>
+</ul>
+    </div>
+
+        </div>
+        <div id="footer">
+              <p>
+                Copyright © 2012-2016 Zach Tse.
+                Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.
+                Theme by <a href="https://github.com/tankywoo/yasimple" target="_blank">YASimple</a>.
+              </p>
+                <p>Last Update 2016-10-15 16:58:59</p>
+        </div>
+    </body>
+</html>
