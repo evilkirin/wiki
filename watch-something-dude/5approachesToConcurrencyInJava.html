@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="Stylesheet" type="text/css" href="/static/css/typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/reset_typo.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+        <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+        <title>5 approaches to concurrency in Java - Christin & Eivind - Zach's not so private wiki</title>
+        <meta name="keywords" content="java, frontend, backend, css, javascript"/>
+        <meta name="description" content="you see the title.."/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+<script language="javascript" type="text/javascript">
+    var oddClick = true;
+    $(document).ready(function() {
+      $('#toggle-button').click(function() {
+        $('#container').animate({
+          width: oddClick? "100%":"60%",
+        });
+        $(this).text(oddClick? "窄版":"宽版");
+        oddClick = !oddClick;
+      });
+    });
+</script>
+
+    </head>
+
+    <body>
+        <div id="container" class="typo">
+            
+    <div id="header">
+        <div id="post-nav">
+            <div id="toggle-button">宽版</div>
+            
+            <a href="/">Home</a> » <a href="/#watch-something-dude">watch-something-dude</a> » 5 approaches to concurrency in Java - Christin & Eivind
+            
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="content">
+        <h1 id="5-approaches-to-concurrency-in-java-christin-eivind">5 approaches to concurrency in Java - Christin &amp; Eivind</h1>
+<iframe src="https://player.vimeo.com/video/182070294" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p>This topic talks about 5 approaches or frameworks: AKKA, Vert.x, Hystrix, Quasar and j.u.c. But it never did what the speakers said it was gonna.</p>
+<p>虽然并没有真正从任何一个方面对框架进行比较，演讲的内容还是有点意思的。AKKA和Vertx都是好早就听说过，还专门看过Vertx创始人对这个框架的介绍Topic，有点像是JVM中的Nodejs，而且框架的设计初衷还包含对polyglot的原生支持。</p>
+<p>Quasar的核心Fiber，我在之前看另外一个框架<a href="https://github.com/jetlang/core">jetlang/core</a>也看到过。当时不太理解，其实Fiber就是用户态线程，与coroutine都是工作在用户态的一种调度工具。当然，不同的框架中实现偏向肯定有所不同。</p>
+<p>其实这些框架就有点像不同的并发范式，都可以用来解决系统资源利用率的问题。</p>
+<h2 id="_1">题外</h2>
+<ul>
+<li>这些框架要么放弃了原有的线程模型，要么基于线程模型。但都是设计出了一种新的任务分发管理机制。</li>
+<li>给别人介绍一种复杂的概念时，可以将一些内容简化抽象，并与生活中常见的事物做内壁，尽量不要引入新的概念。</li>
+</ul>
+    </div>
+
+        </div>
+        <div id="footer">
+              <p>
+                Copyright © 2012-2016 Zach Tse.
+                Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.
+                Theme by <a href="https://github.com/tankywoo/yasimple" target="_blank">YASimple</a>.
+              </p>
+                <p>Last Update 2016-10-16 17:03:16</p>
+        </div>
+    </body>
+</html>
